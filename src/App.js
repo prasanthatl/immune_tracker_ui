@@ -64,7 +64,7 @@ class App extends Component {
       // if(!pat_id){
       //   pat_id="d070e7dd-4d25-4c52-9fb2-78d232e1cf2c";
       // }
-      var url = "http://localhost:8080/vaccines/calendar_events/" + pat_id;
+      var url = "https://immune-tracker-api.herokuapp.com/vaccines/calendar_events/" + pat_id;
       console.log(url);
     axios.get(url,config)
       .then(response => {
